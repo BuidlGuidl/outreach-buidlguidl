@@ -13,9 +13,11 @@ export const Header = () => {
         <Image src="/logo.svg" alt="Hacker House Logo" width={40} height={40} className="mx-4" />
         <div className="flex-col items-start">
           <p className="m-0 text-xl md:text-3xl font-bold !leading-7">
-            <Link href="/">BuidlGuidl Outreach</Link>
+            <Link href="/">BuidlGuidl Outreach</Link>{" "}
           </p>
-          <p className="m-0 mt-1 text-sm md:text-base"></p>
+          <p className="m-0 mt-1 text-sm md:text-base">
+            <a href="https://twitter.com/austingriffith/status/1674444986463719424?s=20"> cohort stream</a>
+          </p>
         </div>
       </div>
       <div className="navbar-end flex-grow mr-4 flex justify-center sm:justify-end">

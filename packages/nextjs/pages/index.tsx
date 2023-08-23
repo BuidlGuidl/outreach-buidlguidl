@@ -71,7 +71,6 @@ const Home: NextPage = () => {
       <div className="flex items-center flex-col flex-grow pt-10 mb-20 mx-auto font-grotesk gap-5">
         <h1 className="font-bold text-4xl pb-8 visible md:hidden">Your Hacker House</h1>
         <div className="max-w-[42rem] m-auto w-[90%] bg-secondary px-8 py-4 rounded-2xl">
-          <p className="font-bold text-left text-4xl leading-6 py-2">Welcome!</p>
           <p>
             We're running an experiment to fund open-source ethereum community builders by providing a monthly ETH
             reward for their ongoing contributions to the ecosystem.
