@@ -35,11 +35,12 @@ const deployYourContract: DeployFunction = async function (hre: HardhatRuntimeEn
   const yourContract = await hre.ethers.getContract("YourContract", deployer);
 
   console.log("🫡 adding batch of builders");
-  const builderStakes = Array(builderList.length).fill("500000000000000000");
+  const builderStakes = Array(builderList.length).fill("1000000000000000000");
   await yourContract.addBatch(builderList, builderStakes);
 
+  console.log("SENDING OWNERSHIP TO ATG.ETH to contract " + yourContract.address);
   // console.log("🏷 handing ownership over to atg.eth");
-  // await yourContract.transferOwnership("0x34aA3F359A9D614239015126635CE7732c18fDF3");
+  await yourContract.transferOwnership("0x34aA3F359A9D614239015126635CE7732c18fDF3");
 };
 
 export default deployYourContract;

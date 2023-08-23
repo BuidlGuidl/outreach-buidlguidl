@@ -54,15 +54,15 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Your Hacker House</title>
+        <title>BuidlGuidl Outreach</title>
         <meta
           name="description"
-          content="We're running an experiment to retroactively fund open-source work by providing a monthly UBI to handpicked open-source developers, and rewarding them for their ongoing contributions to the ecosystem."
+          content="We're running an experiment to fund open-source ethereum community builders by providing a monthly ETH reward for their ongoing contributions to the ecosystem."
         />
-        <meta property="og:title" content="Your Hacker House" />
+        <meta property="og:title" content="BuidlGuidl Outreach" />
         <meta
           property="og:description"
-          content="We're running an experiment to retroactively fund open-source work by providing a monthly UBI to handpicked open-source developers, and rewarding them for their ongoing contributions to the ecosystem."
+          content="We're running an experiment to fund open-source ethereum community builders by providing a monthly ETH reward for their ongoing contributions to the ecosystem."
         />
         <meta property="og:url" content={process.env.NEXT_PUBLIC_VERCEL_URL || ""} />
         <link rel="icon" href="/favicon.ico" />
@@ -73,17 +73,21 @@ const Home: NextPage = () => {
         <div className="max-w-[42rem] m-auto w-[90%] bg-secondary px-8 py-4 rounded-2xl">
           <p className="font-bold text-left text-4xl leading-6 py-2">Welcome!</p>
           <p>
-            This forkable project aims to provide a platform to retroactively fund open-source work by providing a
-            monthly UBI to handpicked open-source developers, rewarding them for their ongoing contributions.
+            We're running an experiment to fund open-source ethereum community builders by providing a monthly ETH
+            reward for their ongoing contributions to the ecosystem.
           </p>
           <p>
-            Developers can submit their contributions (stored in a Smart Contract), automatically claim grant streams,
-            and showcase their work to the public.
+            We are specifically looking for high-impact, under-funded, and edge-case community builders. Visit{" "}
+            <a href="https://buidlguidl.com">BuidlGuidl.com</a> to learn more.
+          </p>
+          <p>
+            Community builders submit their contributions (stored in a Smart Contract), automatically claim grant
+            streams, and showcase their work to the public.
           </p>
         </div>
 
         <div className="max-w-[42rem] m-auto w-[90%] bg-secondary rounded-2xl">
-          <h2 className="font-bold text-2xl px-8 py-4 border-b-2">Hacker ETH Streams</h2>
+          <h2 className="font-bold text-2xl px-8 py-4 border-b-2">Community Builder Streams</h2>
           <div>
             <HackerStreams
               allBuildersData={allBuildersData}
